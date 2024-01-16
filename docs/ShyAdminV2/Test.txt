@@ -1,2 +1,6 @@
---Shy Admin V2 Test (1)
-print("Load Successful")
+local Owner = SystemModule:CheckIfPlayerIsOwner(Player) --Returns true if player is owner
+	local Admin = SystemModule:CheckIfPlayerIsAdmin(Player) --Returns true if player is admin or owner
+
+	if Owner then
+		SystemModule:Notify(Player, "Plugin", Icons.Defualt, "wow", "Defualt")
+	end 
